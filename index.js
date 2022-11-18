@@ -209,20 +209,45 @@ var soNguyenEx9 = [];
 
 function ex9() {
    kiemTraSN = +document.getElementById('kiemTraSN').value;
-   soNguyenEx8.push(kiemTraSN,);
-   console.log(soNguyenEx8);
+   soNguyenEx9.push(kiemTraSN,);
+   console.log(soNguyenEx9);
    //
-   var dem = '';
+   var dem = 0;
    for( var i = 0; i < soNguyenEx9.length; i++){
     
-     if(Number.isInteger(soNguyenEx9[i])) {
-        console.log(soNguyenEx9[i] + ' là số nguyên');
+     if(Number.isInteger(soNguyenEx9[i]) === true) {
+        dem++;
      }
-    
-     
    }
+   console.log('có ' + dem + ' số nguyên');
 }
- 
+
+// -------------bai10------------------
+var soNguyenEx10 = [];
+
+function ex10() {
+    duongAm = +document.getElementById('duongAm').value;
+    soNguyenEx10.push(duongAm,);
+    console.log(soNguyenEx10);
+    //
+    demDuong = 0;
+    demAm = 0;
+    for (var i = 0; i < soNguyenEx10.length; i++){
+        if(soNguyenEx10[i] > 0){
+            demDuong++;
+        }else if(soNguyenEx10[i] < 0){
+            demAm++;          
+        }
+    }
+    if(demDuong > demAm){
+        console.log('số dương nhiều hơn số âm');
+    }else if( demDuong === demAm){
+        console.log('số dương bằng số âm');
+    }else{
+        console.log('số âm nhiều hơn số dương');
+    }
+}
+
 
 
 
