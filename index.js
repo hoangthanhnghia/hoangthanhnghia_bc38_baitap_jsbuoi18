@@ -146,7 +146,85 @@ function ex7() {
         
     // }
 
-    // -------------bai8-----------------
+// -------------bai8-----------------
+var soNguyenEx8 = [];
+
+function ex8() {
+    var soNT = +document.getElementById('txtSNT').value;
+    soNguyenEx8.push(soNT,);
+    console.log(soNguyenEx8);
+    //
+    var flag = true;
+    for (var i = 0; i < soNguyenEx8.length; i++){
+        if( soNguyenEx8[i] < 2){
+                    // console.log('khong phai snt');
+                flag = false;
+                }else if( soNguyenEx8[i] === 2){
+                        // console.log( soNguyenEx8[i] + ' la so nguyen to');
+                }else if ( soNguyenEx8[i] % 2 === 0){
+                    // console.log('khong phai snt');
+                }else{
+                    if( soNguyenEx8[i] % 1 === 0 && soNguyenEx8[i] % soNguyenEx8[i] === 0)
+                    console.log( soNguyenEx8[i] + ' la so nguyen to dau tien trong mang');
+                    break;
+                }
+            }
+
+
+            if( flag === false) {
+                console.log('1 khong phai la snt');
+                
+            }
+    }
+    // var flag = true;
+    // nếu <2 thì ko phải là snt
+    // for( var i = 0; i < soNguyenEx8.length; i++){
+    //     if( soNguyenEx8[i] < 2){
+    //         flag = false;
+    //     }else if( soNguyenEx8[i] === 2){
+    //             flag = true;
+    //     }else if ( soNguyenEx8[i] % 2 === 0){
+    //             flag = false;
+    //     }else{
+    //         for (var n = 3; n < soNguyenEx8.length; n+=2){
+    //                     if ( soNT % n === 0){
+    //                         flag = false;
+    //                         break;
+    //                     }
+    //     }
+    // }
+    //     if (flag === true){
+    //                 console.log('so nguyen to dau tien la:' + soNT);
+    //             }else{
+    //                 console.log('khong phai la so ngto');
+    //             }
+    //         }
+    
+    //     }
+
+    
+
+// ----------------bai9----------------------
+var soNguyenEx9 = [];
+
+function ex9() {
+   kiemTraSN = +document.getElementById('kiemTraSN').value;
+   soNguyenEx8.push(kiemTraSN,);
+   console.log(soNguyenEx8);
+   //
+   var dem = '';
+   for( var i = 0; i < soNguyenEx9.length; i++){
+    
+     if(Number.isInteger(soNguyenEx9[i])) {
+        console.log(soNguyenEx9[i] + ' là số nguyên');
+     }
+    
+     
+   }
+}
+ 
+
+
 
 
 
