@@ -92,7 +92,18 @@ function ex5(){
 }
 
 // -----------bai6----------------
+var soNguyenEx6 = [];
 
+function ex6(){
+    doiCho = +document.getElementById('swap').value;
+    soNguyenEx6.push(doiCho,);
+    console.log(soNguyenEx6);
+    //
+    tam = '';
+    for (var i = 0; i < soNguyenEx6.length; i++){
+        
+    }
+}
 
 
 
